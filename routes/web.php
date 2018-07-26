@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('candidate', 'CandidateController');
+
+ Route::resource('candidate', 'CandidateController'); # sets up some default routes

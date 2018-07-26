@@ -3,8 +3,7 @@
 @section('content')
 <div class="row">
 	<div class="col-md-12">
-		<br>
-		<h3 align="center"> Add Candidate </h3>
+		<h1 align="center"> Add Candidate </h1>
 		@if(count($errors) > 0)
 		<div class = "alert alert-danger">
 			<ul>
@@ -27,7 +26,7 @@
 			<div class="form-group">
 				<input type="date" name="birth_date" class="form-control" placeholder="Insert candidate birth date" />
 			</div>
-			<div class="form-group">
+			<div class="form-group" align="center">
 				<input type="submit" name="btn btn-primary" />
 			</div>
 		</form>

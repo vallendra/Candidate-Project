@@ -3,8 +3,7 @@
 @section('content')
 	<div class = "row">
 		<div class = "col-md-12">
-			<h3>Edit Candidate</h3>
-			
+			<h1 align="center">Edit Candidate</h1>
 			@if(count($errors) > 0 )
 
 				@foreach($errors->all as $error)

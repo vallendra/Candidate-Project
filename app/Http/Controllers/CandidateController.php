@@ -38,7 +38,8 @@ class CandidateController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required', 
+            'name' => 'required',
+            'name' => 'string', 
             'birth_date' => 'required']);
         $candidate = new Candidate([
             'name' => $request->get('name'),
@@ -82,6 +83,7 @@ class CandidateController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
+            'name' => 'string',
             'birth_date' => 'required'
         ]);
 
